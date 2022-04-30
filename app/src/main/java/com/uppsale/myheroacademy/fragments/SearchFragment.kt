@@ -1,18 +1,18 @@
-package com.uppsale.myheroacademy
+package com.uppsale.myheroacademy.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
 import androidx.core.widget.addTextChangedListener
 import androidx.lifecycle.Observer
 import androidx.navigation.findNavController
-import androidx.navigation.fragment.NavHostFragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.uppsale.myheroacademy.MainActivity
+import com.uppsale.myheroacademy.viewModels.MainViewModel
+import com.uppsale.myheroacademy.R
 import com.uppsale.myheroacademy.adapters.HeroesAdapter
-import com.uppsale.myheroacademy.models.Hero
 import com.uppsale.myheroacademy.util.Consts
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_search.*

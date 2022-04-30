@@ -1,10 +1,11 @@
-package com.uppsale.myheroacademy
+package com.uppsale.myheroacademy.viewModels
 
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.uppsale.myheroacademy.App
 import com.uppsale.myheroacademy.declarations.notifyObserver
 import com.uppsale.myheroacademy.models.Appearance
 import com.uppsale.myheroacademy.models.Connections
@@ -13,13 +14,14 @@ import com.uppsale.myheroacademy.models.FavHeroes.DR_STRANGE
 import com.uppsale.myheroacademy.models.FavHeroes.GAMORA
 import com.uppsale.myheroacademy.models.Hero
 import com.uppsale.myheroacademy.models.Powerstats
+import com.uppsale.myheroacademy.repositories.MainRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.util.ArrayList
 import javax.inject.Inject
 
-class MainViewModel(app:App): ViewModel() {
+class MainViewModel(app: App): ViewModel() {
     private val TAG = "MainViewModel"
     val favoriteHeroIds = listOf<Int>(GROOT.id,DR_STRANGE.id,GAMORA.id)
     private val favoriteHeroes:ArrayList<Hero>;

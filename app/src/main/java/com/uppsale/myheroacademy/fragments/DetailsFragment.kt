@@ -1,4 +1,4 @@
-package com.uppsale.myheroacademy
+package com.uppsale.myheroacademy.fragments
 
 import android.content.Intent
 import android.graphics.Bitmap
@@ -17,6 +17,10 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.target.CustomTarget
 import com.bumptech.glide.request.transition.Transition
 import com.bumptech.glide.signature.ObjectKey
+import com.uppsale.myheroacademy.BuildConfig
+import com.uppsale.myheroacademy.MainActivity
+import com.uppsale.myheroacademy.viewModels.MainViewModel
+import com.uppsale.myheroacademy.R
 import com.uppsale.myheroacademy.models.Appearance
 import com.uppsale.myheroacademy.models.Connections
 import com.uppsale.myheroacademy.models.Powerstats

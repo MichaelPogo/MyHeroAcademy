@@ -1,9 +1,10 @@
-package com.uppsale.myheroacademy
+package com.uppsale.myheroacademy.repositories
 
+import com.uppsale.myheroacademy.App
 import com.uppsale.myheroacademy.apis.HeroesApi
 import javax.inject.Inject
 
-class MainRepository @Inject constructor(app:App) {
+class MainRepository @Inject constructor(app: App) {
     @Inject
     lateinit var heroApi:HeroesApi
 
